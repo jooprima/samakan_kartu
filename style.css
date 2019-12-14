@@ -1,0 +1,71 @@
+body{
+    background: #f9f9f9;
+}
+
+.container {
+    width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h3 {
+    color: #1cb7b0;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #1cb7b0;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.kartu {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /*     justify-content: center; */
+    cursor: pointer;
+    transform-style:preserve-3d;
+    transition:transform 1s;
+    perspective:100px;
+}
+
+.belakang {
+    font-size: 1.5em;
+    background: #1cb7b0;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.Depan {
+    background: white;
+    color: #d2d2d2;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+}
+
+.Depan, .belakang{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    backface-visibility:hidden;
+}
+
+.kartu:hover{
+    transform:rotateY(180deg);
+}
+
+#game {
+    display: flex;
+    flex-wrap: wrap;
+}
