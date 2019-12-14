@@ -61,7 +61,7 @@ h4 {
     backface-visibility:hidden;
 }
 
-.kartu:hover{
+.buka, .betul{
     transform:rotateY(180deg);
 }
 
